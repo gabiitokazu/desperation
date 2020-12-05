@@ -1,0 +1,68 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(g11)
+```
+
+
+# Hi there, looking for some Regression Analysis?
+
+[We got you.!](https://gabiitokazu.shinyapps.io/shiny_g11/)
+
+**Package name:** `g11` (yes, no creativity!)
+**GitHub repository:** [FinalProject-11](https://github.com/AU-R-Programming/FinalProject-11)   
+**Published GitHub repository:** [FinalProject-11](https://github.com/gabiitokazu/desperation) 
+
+This baby package is the implementation of the main basic functions that one would like to play around with Linear Regression. Yes! plots of residuals, F-test statistics, computation of the mean square prediction error.. P-value? Of course!.
+
+Now, we had some problems getting the whole thing to run smoothly. So if you are Dr. Molinari and are interested on some good history, please check the [original repo](https://github.com/AU-R-Programming/FinalProject-11). You can find all the commits and the bumps and the erased code. But to see how the proper package is published, please go to [this repo](https://github.com/gabiitokazu/desperation), which shame on Gabi Itokazu, it is on her personal GitHub, BUT do not let yourself be fooled by it: this is a group authorship. Ha, talking about group, here are the authors:
+
+* Eyoel Berhane
+* John Mustapha
+* Gabi Itokazu
+
+#### Installation
+
+Do you want to use it? Open that beautiful `RStudio` of your and type down
+
+```
+install.packages("devtools")
+library(devtools)
+devtools::install_github("gabiitokazu/desperation")
+```
+
+## Examples
+
+```
+install.packages("gamair")
+library(gamair)
+data(hubble)
+
+x <- hubble$x
+y <- hubble$y
+
+# now try stuff:
+
+g11_beta(y, x)
+g11_ci(y, x, beta, alpha=0.01, method="bootstrap")
+```
+
+
+
+Hey. Have fun!
+
+
